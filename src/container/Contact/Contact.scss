@@ -1,0 +1,90 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  .form {
+    width: 50%;
+    align-self: center;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      order: 2;
+      height: 100%;
+    }
+
+    .container {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      @media (min-width: 993px) {
+        padding: 1.5rem 100px;
+      }
+
+      h1 {
+        color: black;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      .fields {
+        margin-top: 1rem;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        height: 100%;
+
+        .item {
+          width: 100%;
+          label {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            color: black;
+            font-weight: 700;
+          }
+        }
+
+        textarea {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .image {
+    width: 50%;
+    overflow: hidden;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      order: 1;
+      max-height: 300px;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      order: 1;
+      max-height: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 1s;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

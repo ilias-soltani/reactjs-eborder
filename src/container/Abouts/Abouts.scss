@@ -1,0 +1,48 @@
+.about {
+  background-color: var(--main-color);
+  padding-top: 100px;
+
+  @media (max-width: 992px) {
+    padding-top: 50px 0;
+  }
+
+  .text-heading {
+    width: fit-content;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+      font-weight: 700;
+      font-size: 72px;
+      margin-bottom: 1rem;
+
+      span {
+        text-transform: uppercase;
+        background-image: linear-gradient(0deg, var(--main-color), white 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      @media (max-width: 992px) {
+        font-size: 64px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      max-width: 670px;
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        font-size: 1rem;
+        max-width: initial;
+      }
+    }
+  }
+}

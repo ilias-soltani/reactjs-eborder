@@ -1,0 +1,17 @@
+.testimonials {
+  background-color: var(--section-color);
+  text-align: center;
+
+  .heading {
+    text-transform: uppercase;
+    color: var(--dark-gray-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .icon {
+    font-size: 72px;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+  }
+}
